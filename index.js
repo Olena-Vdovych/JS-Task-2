@@ -107,3 +107,18 @@ if (hour < 6) {
 } else {
     console.log('Доброго вечора');
 }
+
+// Example 2
+switch(true) {
+    case (hour >= 23 || hour < 5):
+        console.log('Доброї ночі');
+        break;
+    case (hour >= 5 && hour < 11):
+        console.log('Доброго ранку');
+        break;
+    case (hour >= 11 && hour < 17):
+        console.log('Доброго дня');
+        break;
+    default:
+        console.log('Доброго вечора');
+}
