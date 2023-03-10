@@ -92,3 +92,18 @@ if (isNaN(firstSide) || isNaN(secondSide) || isNaN(thirdSide) || firstSide <=0 |
         console.log('Цей трикутник не є прямокутним');
     }
 }
+
+// Task 6 //
+// Example 1
+const now = new Date();
+const hour = now.getHours();
+
+if (hour < 6) {
+    console.log('Доброї ночі');
+} else if (hour < 12) {
+    console.log('Доброго ранку');
+} else if (hour < 18) {
+    console.log('Доброго дня');
+} else {
+    console.log('Доброго вечора');
+}
