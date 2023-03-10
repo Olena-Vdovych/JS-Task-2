@@ -70,3 +70,25 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(newDataArr);
 console.log(arr);
+
+// Task 5 //
+let firstSide = parseFloat(prompt('Введіть довжину першої сторони трикутника'));
+let secondSide = parseFloat(prompt('Введіть довжину другої сторони трикутника'));
+let thirdSide = parseFloat(prompt('Введіть довжину третьої сторони трикутника'));
+
+// Перевірка на коректність введення даних
+if (isNaN(firstSide) || isNaN(secondSide) || isNaN(thirdSide) || firstSide <=0 ||secondSide <= 0 || thirdSide <=0) {
+    console.log('Incorrect data');
+} else {
+    // Обчислення півпериметра трикутника
+    let halfPerimeter = (firstSide + secondSide + thirdSide) / 2;
+    // Обчислення площі трикутника
+    let area = Math.sqrt(halfPerimeter * (halfPerimeter - firstSide) * (halfPerimeter - secondSide) * (halfPerimeter - thirdSide));
+    console.log(`Площа трикутника: ${area.toFixed(3)}`);
+    // Перевірка чи є трикутник прямокутним
+    if (firstSide * firstSide + secondSide * secondSide === thirdSide * thirdSide || firstSide * firstSide + thirdSide * thirdSide === secondSide * secondSide || secondSide * secondSide + thirdSide * thirdSide === firstSide * firstSide) {
+        console.log('Цей трикутник є прямокутним');
+    } else {
+        console.log('Цей трикутник не є прямокутним');
+    }
+}
