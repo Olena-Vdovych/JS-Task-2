@@ -98,11 +98,11 @@ if (isNaN(firstSide) || isNaN(secondSide) || isNaN(thirdSide) || firstSide <=0 |
 const now = new Date();
 const hour = now.getHours();
 
-if (hour < 6) {
+if (hour < 5) {
     console.log('Доброї ночі');
-} else if (hour < 12) {
+} else if (hour < 11) {
     console.log('Доброго ранку');
-} else if (hour < 18) {
+} else if (hour < 17) {
     console.log('Доброго дня');
 } else {
     console.log('Доброго вечора');
