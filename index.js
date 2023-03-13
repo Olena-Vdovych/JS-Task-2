@@ -77,7 +77,7 @@ if (isNaN(firstSide) || isNaN(secondSide) || isNaN(thirdSide) || firstSide <=0 |
     let area = Math.sqrt(halfPerimeter * (halfPerimeter - firstSide) * (halfPerimeter - secondSide) * (halfPerimeter - thirdSide));
     console.log(`Площа трикутника: ${area.toFixed(3)}`);
     // Перевірка чи є трикутник прямокутним
-    if (firstSide * firstSide + secondSide * secondSide === thirdSide * thirdSide || firstSide * firstSide + thirdSide * thirdSide === secondSide * secondSide || secondSide * secondSide + thirdSide * thirdSide === firstSide * firstSide) {
+    if (firstSide * firstSide + secondSide * secondSide === thirdSide * thirdSide || firstSide * firstSide + thirdSide * thirdSide === secondSide * secondSide || secondSide * secondSide + thirdSide * thirdSide === firstSide * firstSide || firstSide + secondSide > thirdSide || secondSide + thirdSide > firstSide || firstSide + thirdSide > secondSide) {
         console.log('Цей трикутник є прямокутним');
     } else {
         console.log('Цей трикутник не є прямокутним');
