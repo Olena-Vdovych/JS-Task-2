@@ -24,9 +24,8 @@ console.log(typeof res2); // ""string""
 let res3 = Boolean(x + y);// Допишіть код, необхідно використовувати змінні x і y
 console.log(res3); // true
 console.log(typeof res3); // ""boolean""
-
-x = undefined;
-let res4 = x / y; // Допишіть код, необхідно використовувати змінні x і y
+ 
+let res4 = ((x - x) / (y - y)); // Допишіть код, необхідно використовувати змінні x і y
 console.log(res4); // NaN
 console.log(typeof res4); // ""number""
 
